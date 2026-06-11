@@ -10,7 +10,7 @@ import pytz
 # ─────────────────────────────────────────────────────────────
 st.set_page_config(
     page_title="SmartView | Visão Geral do Pátio",
-    page_icon=r"C:\Users\felipe.nonato\Music\Projetos\01 - Produtividade Fenix\assets\favicon.ico",
+    page_icon=r"assets\favicon.ico",
     layout="wide",
     initial_sidebar_state="collapsed"
 )
@@ -35,7 +35,7 @@ def get_base64_img(file_path):
     except Exception:
         return ""
 
-bg_path = r"C:\Users\felipe.nonato\Music\Projetos\01 - Produtividade Fenix\assets\tecadi.png"
+bg_path = r"assets\tecadi.png"
 bg_b64 = get_base64_img(bg_path)
 
 st.markdown(f"""
@@ -361,7 +361,7 @@ agora_brasil = datetime.datetime.now(fuso_br)
 c_logo, c_titulo, c_data = st.columns([1, 6, 2])
 with c_logo:
     st.image(
-        r"C:\Users\felipe.nonato\Music\Projetos\01 - Produtividade Fenix\assets\logosemfundotecadi.png",
+        r"assets\logosemfundotecadi.png",
         width=100
     )
 with c_titulo:
