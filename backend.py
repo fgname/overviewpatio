@@ -10,6 +10,7 @@ def padronizar_cliente(nome):
     if "ANTIBIOTICOS" in c: return "ABL"
     elif "COMEXPORT" in c: return "BYD"
     elif "EUROQUADROS" in c: return "EUROQUADROS"
+    elif "BTG" in c: return "BTG"    
     elif "FOUR" in c: return "TECADI - TRANSPORTES"
     elif "INEOS" in c: return "INEOS"
     elif "JCS" in c: return "JCS"
